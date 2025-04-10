@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Project Informatica 1"
+run/main_scene="uid://b1dqlwn2m7l8i"
 config/features=PackedStringArray("4.4")
 config/icon="res://icon.png"
 
