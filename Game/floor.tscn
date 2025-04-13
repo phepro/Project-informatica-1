@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6up84g47s4ej"]
+
+[ext_resource type="Texture2D" uid="uid://cqicihudtgbno" path="res://icon.png" id="1_oj3tl"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_cgngl"]
+distance = 7.0
+
+[node name="Floor" type="StaticBody2D"]
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -56)
+shape = SubResource("WorldBoundaryShape2D_cgngl")
+one_way_collision_margin = 2.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_oj3tl")
