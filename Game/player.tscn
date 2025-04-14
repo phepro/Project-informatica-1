@@ -27,4 +27,36 @@ sprite_frames = SubResource("SpriteFrames_i3pqv")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_hqtel")
 
+[node name="RayCast2D_DownLeft" type="RayCast2D" parent="."]
+position = Vector2(-31, 31)
+target_position = Vector2(0, 64)
+
+[node name="RayCast2D_DownRight" type="RayCast2D" parent="."]
+position = Vector2(31, 31)
+target_position = Vector2(0, 64)
+
+[node name="RayCast2D_UpLeft" type="RayCast2D" parent="."]
+position = Vector2(-31, -31)
+target_position = Vector2(0, -64)
+
+[node name="RayCast2D_UpRight" type="RayCast2D" parent="."]
+position = Vector2(31, -31)
+target_position = Vector2(0, -64)
+
+[node name="RayCast2D_RightUpper" type="RayCast2D" parent="."]
+position = Vector2(31, -31)
+target_position = Vector2(64, 0)
+
+[node name="RayCast2D_RightLower" type="RayCast2D" parent="."]
+position = Vector2(31, 31)
+target_position = Vector2(64, 0)
+
+[node name="RayCast2D_LeftUpper" type="RayCast2D" parent="."]
+position = Vector2(-31, -31)
+target_position = Vector2(-64, 0)
+
+[node name="RayCast2D_LeftLower" type="RayCast2D" parent="."]
+position = Vector2(-31, 31)
+target_position = Vector2(-64, 0)
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
