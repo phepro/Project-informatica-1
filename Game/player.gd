@@ -1,5 +1,5 @@
 extends Area2D
-signal hit
+@export var fist : PackedScene
 @export var speed = 400
 var x_velocity = 0
 var y_velocity = 0
@@ -7,6 +7,7 @@ var collision_height
 var collision_width
 var raycast_collision
 var screen_size
+var can_punch = true
 var touching_ground = false
 
 
@@ -15,6 +16,14 @@ func _ready() -> void:
 	screen_size = get_viewport_rect().size
 	collision_height = $CollisionShape2D.shape.size.y / 2
 	collision_width = $CollisionShape2D.shape.size.x / 2
+
+
+#Summons a fist
+func punch():
+	var f = fist.instantiate()
+	add_child(f)
+	f.transform = $Punch_Spawn.transform
+	f.scale = Vector2(1.2, 0.6)
 
 
 #returns the maximum/minimum value that isn't zero
@@ -40,7 +49,19 @@ func _process(delta) -> void:
 		if touching_ground:
 			y_velocity = -640
 	if Input.is_action_pressed("move_down"):
-		y_velocity += 1
+		y_velocity += 640
+	if Input.is_action_pressed("punch"):
+		if can_punch:
+			can_punch = false
+			punch()
+			await get_tree().create_timer(2).timeout
+			can_punch = true
+	
+	#This causes too many bugs
+	"""if x_velocity > 0:
+		scale = Vector2(1, 1)
+	if x_velocity < 0:
+		scale = Vector2(-1, 1)"""
 
 
 func _physics_process(delta) -> void:
@@ -81,12 +102,10 @@ func _physics_process(delta) -> void:
 		print("dead")
 
 
-func _on_body_entered(body: Node2D) -> void:
-	hit.emit()
-	$CollisionShape2D.set_deferred("disabled", true)
+func _on_body_entered(body) -> void:
+	if body.is_in_group("mobs"):
+		queue_free()
+	
+	"""$CollisionShape2D.set_deferred("disabled", true)
 	await get_tree().create_timer(3).timeout
-	$CollisionShape2D.disabled = false
-
-func start(pos):
-	position = pos
-	show()
+	$CollisionShape2D.disabled = false"""

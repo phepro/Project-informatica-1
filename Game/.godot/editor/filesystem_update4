@@ -1,2 +1,8 @@
+res://fist.gd
+res://fist.tscn
 res://player.tscn
+res://player.gd
 res://main.tscn
+res://main.gd
+res://enemy.tscn
+res://enemy.gd
