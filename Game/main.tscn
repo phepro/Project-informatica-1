@@ -1,20 +1,27 @@
-[gd_scene load_steps=5 format=3 uid="uid://b1dqlwn2m7l8i"]
+[gd_scene load_steps=6 format=3 uid="uid://b1dqlwn2m7l8i"]
 
 [ext_resource type="Script" uid="uid://d18ptku1aroqm" path="res://main.gd" id="1_h2yge"]
 [ext_resource type="PackedScene" uid="uid://c6up84g47s4ej" path="res://Tiles/ground.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://b8inaxtragjkt" path="res://Player/player.tscn" id="2_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://1hb6t4avhmy" path="res://Enemies/enemy.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://b6mfv350b0sod" path="res://Tiles/wall.tscn" id="4_lquwl"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_h2yge")
 
 [node name="Player" parent="." instance=ExtResource("2_1bvp3")]
 position = Vector2(224, 288)
+platform_floor_layers = 4294967040
+platform_wall_layers = 2
 
-[node name="tile" parent="." instance=ExtResource("1_ig7tw")]
-position = Vector2(576, 616)
+[node name="ground" parent="." instance=ExtResource("1_ig7tw")]
+position = Vector2(576, 608)
 scale = Vector2(18, 1)
 
+[node name="Wall" parent="." instance=ExtResource("4_lquwl")]
+position = Vector2(32, 288)
+scale = Vector2(1, 9)
+
 [node name="enemy" parent="." instance=ExtResource("4_1bvp3")]
-position = Vector2(638, 531)
+position = Vector2(736, 544)
 gravity_scale = 1.0
