@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dpn530tfo4jx3"]
 
-[ext_resource type="Script" uid="uid://nqk3ija43hf4" path="res://fist.gd" id="1_cqe2n"]
+[ext_resource type="Script" uid="uid://nqk3ija43hf4" path="res://Player/fist.gd" id="1_cqe2n"]
 [ext_resource type="Texture2D" uid="uid://cqicihudtgbno" path="res://icon.png" id="2_nr678"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_qquw1"]
@@ -20,6 +20,8 @@ size = Vector2(64, 64)
 [node name="fist" type="Area2D"]
 rotation = 1.5708
 scale = Vector2(0.8, 1.6)
+collision_layer = 32
+collision_mask = 16
 script = ExtResource("1_cqe2n")
 metadata/_edit_group_ = true
 

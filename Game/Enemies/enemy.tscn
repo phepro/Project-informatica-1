@@ -1,12 +1,14 @@
 [gd_scene load_steps=4 format=3 uid="uid://1hb6t4avhmy"]
 
-[ext_resource type="Script" uid="uid://dv6wkggivmsrx" path="res://enemy.gd" id="1_7k104"]
+[ext_resource type="Script" uid="uid://dv6wkggivmsrx" path="res://Enemies/enemy.gd" id="1_7k104"]
 [ext_resource type="Texture2D" uid="uid://cqicihudtgbno" path="res://icon.png" id="2_4gyqm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qi2p4"]
 size = Vector2(64, 64)
 
 [node name="enemy" type="RigidBody2D" groups=["mobs"]]
+collision_layer = 16
+collision_mask = 47
 gravity_scale = 0.0
 script = ExtResource("1_7k104")
 metadata/_edit_group_ = true

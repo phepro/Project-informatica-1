@@ -1,33 +1,20 @@
 [gd_scene load_steps=5 format=3 uid="uid://b1dqlwn2m7l8i"]
 
 [ext_resource type="Script" uid="uid://d18ptku1aroqm" path="res://main.gd" id="1_h2yge"]
-[ext_resource type="PackedScene" uid="uid://c6up84g47s4ej" path="res://tile.tscn" id="1_ig7tw"]
-[ext_resource type="PackedScene" uid="uid://c2bse5e4s3is1" path="res://player.tscn" id="2_0xm2m"]
-[ext_resource type="PackedScene" uid="uid://1hb6t4avhmy" path="res://enemy.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://c6up84g47s4ej" path="res://Tiles/ground.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://b8inaxtragjkt" path="res://Player/player.tscn" id="2_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://1hb6t4avhmy" path="res://Enemies/enemy.tscn" id="4_1bvp3"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_h2yge")
 
-[node name="player" parent="." instance=ExtResource("2_0xm2m")]
-position = Vector2(208, 391)
+[node name="Player" parent="." instance=ExtResource("2_1bvp3")]
+position = Vector2(224, 288)
 
 [node name="tile" parent="." instance=ExtResource("1_ig7tw")]
-position = Vector2(206, 566)
-
-[node name="tile4" parent="." instance=ExtResource("1_ig7tw")]
-position = Vector2(555, 616)
-
-[node name="tile2" parent="." instance=ExtResource("1_ig7tw")]
-position = Vector2(295, 590)
-
-[node name="tile3" parent="." instance=ExtResource("1_ig7tw")]
-position = Vector2(376, 596)
-
-[node name="tile5" parent="." instance=ExtResource("1_ig7tw")]
-position = Vector2(464, 605)
-
-[node name="tile6" parent="." instance=ExtResource("1_ig7tw")]
-position = Vector2(125, 525)
+position = Vector2(576, 616)
+scale = Vector2(18, 1)
 
 [node name="enemy" parent="." instance=ExtResource("4_1bvp3")]
 position = Vector2(638, 531)
+gravity_scale = 1.0
