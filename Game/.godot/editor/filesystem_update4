@@ -1,8 +1,9 @@
-res://fist.gd
-res://fist.tscn
-res://player.tscn
-res://player.gd
-res://main.tscn
-res://main.gd
+res://menu.gd
+res://menu.tscn
 res://enemy.tscn
 res://enemy.gd
+res://player.tscn
+res://main_scene.tscn
+res://main.tscn
+res://main.gd
+res://pause_menu.gd

@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://b1dqlwn2m7l8i"]
+[gd_scene load_steps=6 format=3 uid="uid://b1dqlwn2m7l8i"]
 
 [ext_resource type="Script" uid="uid://d18ptku1aroqm" path="res://main.gd" id="1_h2yge"]
 [ext_resource type="PackedScene" uid="uid://c6up84g47s4ej" path="res://tile.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://c2bse5e4s3is1" path="res://player.tscn" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://1hb6t4avhmy" path="res://enemy.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://1hnhj7bog3xy" path="res://menu.tscn" id="5_lquwl"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_h2yge")
@@ -31,3 +32,10 @@ position = Vector2(125, 525)
 
 [node name="enemy" parent="." instance=ExtResource("4_1bvp3")]
 position = Vector2(638, 531)
+
+[node name="pause_menu" parent="." instance=ExtResource("5_lquwl")]
+visible = false
+offset_left = 548.0
+offset_top = 313.0
+offset_right = -533.0
+offset_bottom = -268.0
