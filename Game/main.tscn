@@ -10,17 +10,17 @@
 script = ExtResource("1_h2yge")
 
 [node name="Player" parent="." instance=ExtResource("2_1bvp3")]
-position = Vector2(224, 288)
+position = Vector2(624, 288)
+floor_block_on_wall = false
 platform_floor_layers = 4294967040
-platform_wall_layers = 2
 
 [node name="ground" parent="." instance=ExtResource("1_ig7tw")]
 position = Vector2(576, 608)
 scale = Vector2(18, 1)
 
 [node name="Wall" parent="." instance=ExtResource("4_lquwl")]
-position = Vector2(32, 288)
-scale = Vector2(1, 9)
+position = Vector2(32, 320)
+scale = Vector2(1, 8)
 
 [node name="enemy" parent="." instance=ExtResource("4_1bvp3")]
 position = Vector2(736, 544)
