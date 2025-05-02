@@ -1,6 +1,6 @@
 res://main.tscn
 res://Enemies/enemy.gd
-res://Player/player.tscn
-res://Player/player.gd
-res://Tiles/ground.tscn
 res://Enemies/enemy.tscn
+res://Player/player.gd
+res://Player/fist.gd
+res://Player/player.tscn

@@ -1,7 +1,8 @@
+CharacterBody2D
+RayCast2D
 StaticBody2D
 TileMapLayer
 TileMap
-CharacterBody2D
 CollisionShape2D
 Sprite2D
 RigidBody2D
@@ -9,5 +10,4 @@ Timer
 Marker2D
 AnimatedSprite2D
 Area2D
-RayCast2D
 Node
