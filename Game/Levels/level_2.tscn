@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqvs4i0rcv6wy"]
+
+[ext_resource type="PackedScene" uid="uid://c6up84g47s4ej" path="res://Tiles/ground.tscn" id="1_kbe2v"]
+[ext_resource type="PackedScene" uid="uid://b8inaxtragjkt" path="res://Player/player.tscn" id="2_arsda"]
+
+[node name="Level2" type="Node"]
+
+[node name="ground" parent="." instance=ExtResource("1_kbe2v")]
+position = Vector2(448, 608)
+scale = Vector2(14, 1)
+
+[node name="Player" parent="." instance=ExtResource("2_arsda")]
+position = Vector2(112, 520)
+scale = Vector2(0.9, 0.9)
+floor_block_on_wall = false
