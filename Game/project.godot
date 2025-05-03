@@ -69,9 +69,11 @@ pause={
 
 2d_physics/layer_1="Player"
 2d_physics/layer_2="Environment"
+2d_physics/layer_3="Projectile"
 2d_physics/layer_4="Platforms"
 2d_physics/layer_5="Enemies"
 2d_physics/layer_6="Attacks"
+2d_physics/layer_7="Misc Tile"
 
 [rendering]
 

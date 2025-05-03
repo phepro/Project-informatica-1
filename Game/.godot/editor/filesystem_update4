@@ -1,6 +1,9 @@
-res://main.tscn
-res://Enemies/enemy.gd
 res://Enemies/enemy.tscn
+res://Enemies/enemy.gd
 res://Player/player.gd
-res://Player/fist.gd
+res://main.tscn
 res://Player/player.tscn
+res://Tiles/platform.tscn
+res://Tiles/platform.gd
+res://Tiles/bounce_pad.gd
+res://Tiles/bounce_pad.tscn

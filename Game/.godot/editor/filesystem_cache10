@@ -1,22 +1,26 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1746193209
+::res://::1746299655
 default_env.tres::Environment/Environment::-1::1743690379::0::1::::<><><>0<>0<><>::
 icon.png::CompressedTexture2D/CompressedTexture2D::5912514006685443980::1743690379::1743690713::1::::<><><>0<>0<>9ea4ad57f989dcc38e46129f91bae676<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
 main.gd::GDScript/GDScript::9053241693839403436::1744896367::0::1::::<>Node<><>0<>0<><>::
-main.tscn::PackedScene::4218516044001564278::1746193209::0::1::::<><><>0<>0<><>::uid://d18ptku1aroqm::::res://main.gd<>uid://c6up84g47s4ej::::res://Tiles/ground.tscn<>uid://b8inaxtragjkt::::res://Player/player.tscn<>uid://1hb6t4avhmy::::res://Enemies/enemy.tscn
+main.tscn::PackedScene::4218516044001564278::1746299655::0::1::::<><><>0<>0<><>::uid://d18ptku1aroqm::::res://main.gd<>uid://c6up84g47s4ej::::res://Tiles/ground.tscn<>uid://b8inaxtragjkt::::res://Player/player.tscn<>uid://1hb6t4avhmy::::res://Enemies/enemy.tscn<>uid://c06owult0bthe::::res://Tiles/platform.tscn
 menu.tscn::PackedScene/PackedScene::1840162922538864454::1744896367::0::1::::<><><>0<>0<><>::uid://csg2kcg8mcikf::::res://pause_menu.gd<>uid://bphdndih1guy0::::res://Menuclick.wav<>uid://o3kdskrrphvb::::res://menuhover.wav
 Menuclick.wav::AudioStreamWAV/AudioStreamWAV::3453909519122606537::1744896367::1744896631::1::::<><><>0<>0<>fce4ffa5a51376d9eadcd529f5e44bf1<>res://.godot/imported/Menuclick.wav-bfac5905641b8d02fc5612927fe098ea.sample::
 menuhover.wav::AudioStreamWAV/AudioStreamWAV::1041059877019571471::1744896367::1744896631::1::::<><><>0<>0<>883d7e0e4406908c9da8d991ce9bf483<>res://.godot/imported/menuhover.wav-8825b7c1d05692151da5c0d0f6e490fa.sample::
 pause_menu.gd::GDScript/GDScript::6050284151969907177::1744896367::0::1::::<>Control<><>0<>0<><>::
-::res://Enemies/::1746193265
-enemy.gd::GDScript::8698577434434714321::1746193074::0::1::::<>CharacterBody2D<><>0<>0<><>::
-enemy.tscn::PackedScene::54102285242423892::1746192989::0::1::::<><><>0<>0<><>::uid://dv6wkggivmsrx::::res://Enemies/enemy.gd<>uid://cqicihudtgbno::::res://icon.png
-Evil Dababycar.png::CompressedTexture2D::3804334597572484650::1746193200::1746193267::1::::<><><>0<>0<>edc0781cfdfa3e68d2a2f035eb2fa6c2<>res://.godot/imported/Evil Dababycar.png-f194a23df0f04c69818b5b4e60e3d2e4.ctex::
-::res://Player/::1746179913
+::res://Enemies/::1746297508
+enemy.gd::GDScript::8698577434434714321::1746297464::0::1::::<>CharacterBody2D<><>0<>0<><>::
+enemy.tscn::PackedScene::54102285242423892::1746297508::0::1::::<><><>0<>0<><>::uid://dv6wkggivmsrx::::res://Enemies/enemy.gd<>uid://bug33ni563cas::::res://Enemies/Evil Dababycar.png
+Evil Dababycar.png::CompressedTexture2D/CompressedTexture2D::3804334597572484650::1746193200::1746193267::1::::<><><>0<>0<>edc0781cfdfa3e68d2a2f035eb2fa6c2<>res://.godot/imported/Evil Dababycar.png-f194a23df0f04c69818b5b4e60e3d2e4.ctex::
+::res://Player/::1746299310
 DababyCar.png::CompressedTexture2D/CompressedTexture2D::5955366033012022399::1744899737::1744899744::1::::<><><>0<>0<>4ce243bf54d9e84ff78b0a1bb07799bc<>res://.godot/imported/DababyCar.png-c193274dc6099c1406db0756e770656b.ctex::
-fist.gd::GDScript/GDScript::946142617646282579::1744749142::0::1::::<>Area2D<><>0<>0<><>::
+fist.gd::GDScript::946142617646282579::1746194623::0::1::::<>Area2D<><>0<>0<><>::
 fist.tscn::PackedScene/PackedScene::8240804471146971382::1744896800::0::1::::<><><>0<>0<><>::uid://nqk3ija43hf4::::res://Player/fist.gd<>uid://cqicihudtgbno::::res://icon.png
-player.gd::GDScript::5442580070743292685::1746179289::0::1::::<>CharacterBody2D<><>0<>0<><>::
-player.tscn::PackedScene::4719958104847597979::1746179913::0::1::::<><><>0<>0<><>::uid://cjsoq7m0o2bbp::::res://Player/player.gd<>uid://dpn530tfo4jx3::::res://Player/fist.tscn<>uid://cq33aj2b5tvj8::::res://Player/DababyCar.png
-::res://Tiles/::1746191995
-ground.tscn::PackedScene::6990954295143871925::1746179637::0::1::::<><><>0<>0<><>::uid://cqicihudtgbno::::res://icon.png
+player.gd::GDScript::5442580070743292685::1746299310::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.tscn::PackedScene::4719958104847597979::1746297466::0::1::::<><><>0<>0<><>::uid://cjsoq7m0o2bbp::::res://Player/player.gd<>uid://dpn530tfo4jx3::::res://Player/fist.tscn<>uid://cq33aj2b5tvj8::::res://Player/DababyCar.png
+::res://Tiles/::1746299990
+BouncePad_(CloseEnough).png::CompressedTexture2D::375662937907416156::1746299990::1746299994::1::::<><><>0<>0<>dadc2fde2dabf94114246f71ac810f8c<>res://.godot/imported/BouncePad_(CloseEnough).png-0eb4c50eb4bb68b2fc569fd10966c802.ctex::
+ground.tscn::PackedScene/PackedScene::6990954295143871925::1746179637::0::1::::<><><>0<>0<><>::uid://cqicihudtgbno::::res://icon.png
+Platform_Placeholder.png::CompressedTexture2D::550984949052107933::1746298196::1746298497::1::::<><><>0<>0<>4aba5c412a82d88623ae33d24ebf99b9<>res://.godot/imported/Platform_Placeholder.png-87b2b5d50d0bd0975dbcea2d984f82ac.ctex::
+platform.tscn::PackedScene::6592448562434097398::1746299680::0::1::::<><><>0<>0<><>::uid://dec7tlsqpyyft::::res://Tiles/platform.gd<>uid://h35v2x4352ir::::res://Tiles/Platform_Placeholder.png
+platform.gd::GDScript::7446123661303586253::1746299654::0::1::::<>StaticBody2D<><>0<>0<><>::

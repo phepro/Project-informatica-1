@@ -1,7 +1,6 @@
 extends CharacterBody2D
 
 const SPEED = 150.0
-signal player_collision
 
 
 func _physics_process(delta: float) -> void:
@@ -10,9 +9,10 @@ func _physics_process(delta: float) -> void:
 		velocity += get_gravity() * delta
 	
 	velocity.x = SPEED * scale.y
+	
 
 	move_and_slide()
-
+	
 	#checks all collision made after movement
 	for i in get_slide_collision_count():
 		var collision = get_slide_collision(i)

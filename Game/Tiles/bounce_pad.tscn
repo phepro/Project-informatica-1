@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dthy8knyqneei"]
+
+[ext_resource type="Script" uid="uid://bj5k47wio83yh" path="res://Tiles/bounce_pad.gd" id="1_biohu"]
+[ext_resource type="Texture2D" uid="uid://fl8d4o7p5m7m" path="res://Tiles/BouncePad_(CloseEnough).png" id="1_r701r"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_biohu"]
+size = Vector2(64, 48)
+
+[node name="Bounce_Pad" type="Area2D"]
+collision_layer = 64
+collision_mask = 17
+script = ExtResource("1_biohu")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_r701r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_biohu")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

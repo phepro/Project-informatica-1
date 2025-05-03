@@ -9,8 +9,6 @@ size = Vector2(64, 64)
 [node name="enemy" type="CharacterBody2D" groups=["mobs"]]
 collision_layer = 16
 collision_mask = 43
-floor_max_angle = 0.0
-floor_snap_length = 4.0
 platform_floor_layers = 4294967040
 script = ExtResource("1_7k104")
 
