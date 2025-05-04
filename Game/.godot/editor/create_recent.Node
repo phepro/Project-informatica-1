@@ -1,7 +1,8 @@
+Button
+Camera2D
 TextEdit
 Label
 LineEdit
-Button
 CollisionShape2D
 Sprite2D
 Area2D
@@ -11,4 +12,3 @@ RayCast2D
 TileMapLayer
 TileMap
 RigidBody2D
-Timer

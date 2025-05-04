@@ -26,3 +26,11 @@ func pausemenu():
 
 func _on_start_button_button_down() -> void:
 	get_tree().change_scene_to_file("res://Levels/level_1.tscn")
+
+
+func _on_fullscreen_button_button_down() -> void:
+	DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
+
+
+func _on_windowed_button_button_down() -> void:
+	DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)

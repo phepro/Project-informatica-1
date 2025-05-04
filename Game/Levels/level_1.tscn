@@ -47,8 +47,12 @@ scale = Vector2(3, 1)
 [node name="Bounce_Pad" parent="." instance=ExtResource("4_77x7w")]
 position = Vector2(288, 552)
 
+[node name="Bounce_Pad2" parent="." instance=ExtResource("4_77x7w")]
+position = Vector2(1120, 616)
+
 [node name="enemy" parent="." instance=ExtResource("5_xoyoh")]
-position = Vector2(720, 520)
+position = Vector2(720, 544)
+wall_min_slide_angle = 3.14159
 
 [node name="LevelExit" parent="." instance=ExtResource("2_0urlm")]
 position = Vector2(864, 256)

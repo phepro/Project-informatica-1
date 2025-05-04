@@ -1,8 +1,5 @@
-res://main.tscn
-res://Enemies/enemy.gd
-res://Levels/level_2.tscn
 res://Levels/level_1.tscn
-res://Tiles/Level_Exit.tscn
-res://Tiles/level_exit.gd
-res://Levels/main.tscn
-res://main.gd
+res://Enemies/enemy.gd
+res://Player/player.gd
+res://Player/player.tscn
+res://main.tscn

@@ -7,6 +7,7 @@ var can_punch = true
 
 func _ready() -> void:
 	var screen_size = get_viewport_rect().size
+	$Camera2D.limit_bottom = screen_size.y
 
 
 #Summons a fist
