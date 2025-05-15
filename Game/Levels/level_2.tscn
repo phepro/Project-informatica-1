@@ -1,15 +1,47 @@
-[gd_scene load_steps=3 format=3 uid="uid://bqvs4i0rcv6wy"]
+[gd_scene load_steps=6 format=3 uid="uid://og0dgcfccao8"]
 
-[ext_resource type="PackedScene" uid="uid://c6up84g47s4ej" path="res://Tiles/ground.tscn" id="1_kbe2v"]
 [ext_resource type="PackedScene" uid="uid://b8inaxtragjkt" path="res://Player/player.tscn" id="2_arsda"]
+[ext_resource type="PackedScene" uid="uid://c6up84g47s4ej" path="res://Tiles/ground.tscn" id="2_bcgyv"]
+[ext_resource type="PackedScene" uid="uid://c06owult0bthe" path="res://Tiles/platform.tscn" id="3_fbld2"]
+[ext_resource type="PackedScene" uid="uid://1hb6t4avhmy" path="res://Enemies/enemy.tscn" id="4_s275v"]
+[ext_resource type="PackedScene" uid="uid://bl1dlaojjs5ai" path="res://Tiles/Level_Exit.tscn" id="5_pml6m"]
 
 [node name="Level2" type="Node"]
 
-[node name="ground" parent="." instance=ExtResource("1_kbe2v")]
-position = Vector2(448, 608)
-scale = Vector2(14, 1)
-
 [node name="Player" parent="." instance=ExtResource("2_arsda")]
-position = Vector2(112, 520)
-scale = Vector2(0.9, 0.9)
+position = Vector2(144, 128)
+scale = Vector2(0.8, 0.8)
 floor_block_on_wall = false
+
+[node name="ground" parent="." groups=["environment"] instance=ExtResource("2_bcgyv")]
+position = Vector2(136, 198)
+scale = Vector2(0.8, 0.8)
+
+[node name="ground2" parent="." groups=["environment"] instance=ExtResource("2_bcgyv")]
+position = Vector2(208, 298)
+scale = Vector2(0.8, 0.8)
+
+[node name="ground3" parent="." groups=["environment"] instance=ExtResource("2_bcgyv")]
+position = Vector2(360, 272)
+scale = Vector2(0.8, 0.8)
+
+[node name="ground4" parent="." groups=["environment"] instance=ExtResource("2_bcgyv")]
+position = Vector2(496, 232)
+scale = Vector2(0.8, 0.8)
+
+[node name="ground5" parent="." groups=["environment"] instance=ExtResource("2_bcgyv")]
+position = Vector2(304, 336)
+scale = Vector2(0.8, 0.8)
+
+[node name="Platform3" parent="." groups=["platform"] instance=ExtResource("3_fbld2")]
+position = Vector2(400, 192)
+scale = Vector2(0.8, 0.8)
+
+[node name="enemy" parent="." instance=ExtResource("4_s275v")]
+position = Vector2(274, 280)
+scale = Vector2(0.8, 0.8)
+wall_min_slide_angle = 3.14159
+
+[node name="LevelExit" parent="." instance=ExtResource("5_pml6m")]
+position = Vector2(512, 120)
+scale = Vector2(0.8, 0.8)

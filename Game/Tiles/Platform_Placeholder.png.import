@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://h35v2x4352ir"
-path="res://.godot/imported/Platform_Placeholder.png-87b2b5d50d0bd0975dbcea2d984f82ac.ctex"
+uid="uid://cd2m56ume0k5d"
+path="res://.godot/imported/Platform_Placeholder.png-b423287bf272c2ff2072521cc7819755.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Tiles/Platform_Placeholder.png"
-dest_files=["res://.godot/imported/Platform_Placeholder.png-87b2b5d50d0bd0975dbcea2d984f82ac.ctex"]
+source_file="res://Assets/Platform_Placeholder.png"
+dest_files=["res://.godot/imported/Platform_Placeholder.png-b423287bf272c2ff2072521cc7819755.ctex"]
 
 [params]
 

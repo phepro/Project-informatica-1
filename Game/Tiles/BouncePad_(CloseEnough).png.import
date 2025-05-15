@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fl8d4o7p5m7m"
-path="res://.godot/imported/BouncePad_(CloseEnough).png-0eb4c50eb4bb68b2fc569fd10966c802.ctex"
+uid="uid://ckxnr73safuaj"
+path="res://.godot/imported/BouncePad_(CloseEnough).png-a4ba8a5d5f5551fc9df6d3b1553b771b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Tiles/BouncePad_(CloseEnough).png"
-dest_files=["res://.godot/imported/BouncePad_(CloseEnough).png-0eb4c50eb4bb68b2fc569fd10966c802.ctex"]
+source_file="res://Assets/BouncePad_(CloseEnough).png"
+dest_files=["res://.godot/imported/BouncePad_(CloseEnough).png-a4ba8a5d5f5551fc9df6d3b1553b771b.ctex"]
 
 [params]
 

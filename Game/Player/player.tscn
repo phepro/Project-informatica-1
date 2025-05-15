@@ -15,8 +15,9 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ntmi"]
-size = Vector2(64, 57)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_btcbx"]
+radius = 28.0
+height = 68.0
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 collision_mask = 27
@@ -28,13 +29,13 @@ script = ExtResource("1_onrkg")
 fist = ExtResource("2_i3pqv")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(4.76837e-06, -9.23872e-07)
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_l8h54")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 3.5)
-shape = SubResource("RectangleShape2D_4ntmi")
+position = Vector2(0, 4)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_btcbx")
 
 [node name="Punch_Spawn" type="Marker2D" parent="."]
 position = Vector2(70.4, 0)

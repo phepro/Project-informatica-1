@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
 @export var fist : PackedScene
-const SPEED = 300.0
-const JUMP_VELOCITY = -500.0
+@export var SPEED = 200.0
+@export var JUMP_VELOCITY = -300.0
 var can_punch = true
 
 func _ready() -> void:
@@ -56,10 +56,10 @@ func _physics_process(delta: float) -> void:
 		var collider = collision.get_collider()
 		
 		#Checks for top collision with Enemies
-		if collider.collision_layer == 16 and is_on_floor_only():
+		if collider.is_in_group("mobs") and is_on_floor_only():
 			pass
 			velocity.y = JUMP_VELOCITY
 			collider.queue_free()
 		#Checks for side collision with Enemies
-		elif collider.collision_layer == 16 and is_on_wall():
+		elif collider.is_in_group("mobs") and is_on_wall():
 			queue_free()

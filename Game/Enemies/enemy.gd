@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED = 150.0
+@export var SPEED = 100.0
 
 
 func _physics_process(delta: float) -> void:
@@ -21,7 +21,7 @@ func _physics_process(delta: float) -> void:
 		var collider = collision.get_collider()
 		
 		#Checks for collision with Environment and wall
-		if collider.collision_layer == 2 and is_on_wall() and str(collider.name) not in collision_names:
+		if collider.is_in_group("environment") and is_on_wall() and str(collider.name) not in collision_names:
 			scale.x = -scale.x
 			position.x -= 5 * scale.y
 		

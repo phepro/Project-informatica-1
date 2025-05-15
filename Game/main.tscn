@@ -6,24 +6,24 @@
 script = ExtResource("1_h2yge")
 
 [node name="Start_Button" type="Button" parent="."]
-offset_left = 216.0
-offset_top = 232.0
-offset_right = 592.0
-offset_bottom = 416.0
+offset_left = 80.0
+offset_top = 120.0
+offset_right = 328.0
+offset_bottom = 232.0
 text = "Go to LEVEL 1"
 
 [node name="Fullscreen_Button" type="Button" parent="."]
-offset_left = 776.0
-offset_top = 136.0
-offset_right = 984.0
-offset_bottom = 248.0
+offset_left = 400.0
+offset_top = 56.0
+offset_right = 544.0
+offset_bottom = 120.0
 text = "Fullscreen"
 
 [node name="Windowed_Button" type="Button" parent="."]
-offset_left = 776.0
-offset_top = 360.0
-offset_right = 984.0
-offset_bottom = 472.0
+offset_left = 400.0
+offset_top = 224.0
+offset_right = 544.0
+offset_bottom = 288.0
 text = "Windowed"
 
 [connection signal="button_down" from="Start_Button" to="." method="_on_start_button_button_down"]
