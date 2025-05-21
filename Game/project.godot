@@ -16,6 +16,10 @@ run/main_scene="uid://b1dqlwn2m7l8i"
 config/features=PackedStringArray("4.4")
 config/icon="res://icon.png"
 
+[autoload]
+
+MusicManager="*res://MusicManager.tscn"
+
 [display]
 
 window/size/viewport_width=640

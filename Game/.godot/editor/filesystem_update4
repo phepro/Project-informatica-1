@@ -1,5 +1,6 @@
-res://Levels/level_1.tscn
 res://Enemies/enemy.gd
-res://main.tscn
-res://main.gd
-res://menu.tscn
+res://MusicManager.tscn
+res://music_manager.gd
+res://Levels/level_1.tscn
+res://Levels/level_1.gd
+res://Levels/level_2.tscn
