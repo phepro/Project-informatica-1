@@ -1,5 +1,5 @@
 res://Levels/level_1.tscn
 res://Enemies/enemy.gd
-res://Enemies/enemy.tscn
-res://Player/player.tscn
-res://Player/player.gd
+res://main.tscn
+res://main.gd
+res://menu.tscn
