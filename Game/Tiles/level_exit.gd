@@ -1,4 +1,11 @@
 extends Area2D
+signal LEpos(Position, size)
+
+func _ready() -> void:
+	var size = $CollisionShape2D.shape.size.x / 2
+	var LEposition = position
+	LEposition.x += size * scale.x
+	emit_signal("LEpos", LEposition)
 
 
 func _on_body_entered(body: Node2D) -> void:

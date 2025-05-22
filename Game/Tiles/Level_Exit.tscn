@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bl1dlaojjs5ai"]
 
 [ext_resource type="Script" uid="uid://c57k8ieoju0fl" path="res://Tiles/level_exit.gd" id="1_mduer"]
-[ext_resource type="Texture2D" uid="uid://dxaj53dv4n70h" path="res://Tiles/Door.webp" id="1_t8olx"]
+[ext_resource type="Texture2D" uid="uid://puvpkvlyb5i" path="res://Tiles/Door.webp" id="1_t8olx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t8olx"]
 size = Vector2(64, 128)

@@ -3,12 +3,13 @@ extends CharacterBody2D
 @export var fist : PackedScene
 @export var SPEED = 200.0
 @export var JUMP_VELOCITY = -300.0
+var level = 0
 var can_punch = true
+var level_exit_pos = 1000000
 
 func _ready() -> void:
 	var screen_size = get_viewport_rect().size
 	$Camera2D.limit_bottom = screen_size.y
-
 
 #Summons a fist
 func punch():
@@ -47,8 +48,10 @@ func _physics_process(delta: float) -> void:
 		velocity.x = direction * SPEED	
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-
+	
 	move_and_slide()
+	position.x = clamp(position.x, 0, level_exit_pos)
+	
 	
 	#checks all collision made after movement
 	for i in get_slide_collision_count():
@@ -63,3 +66,12 @@ func _physics_process(delta: float) -> void:
 		#Checks for side collision with Enemies
 		elif collider.is_in_group("mobs") and is_on_wall():
 			queue_free()
+
+
+func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
+	queue_free()
+
+
+func _on_level_enter(LEPosition: Variant) -> void:
+	$Camera2D.limit_right = LEPosition.x
+	level_exit_pos = LEPosition.x

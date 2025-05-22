@@ -43,3 +43,8 @@ position = Vector2(70.4, 0)
 [node name="Camera2D" type="Camera2D" parent="."]
 limit_left = 0
 limit_top = 0
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="Camera2D"]
+rect = Rect2(-320, -190, 640, 380)
+
+[connection signal="screen_exited" from="Camera2D/VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
