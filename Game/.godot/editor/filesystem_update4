@@ -1,0 +1,6 @@
+res://main.tscn
+res://Levels/level_2.tscn
+res://Enemies/enemy.gd
+res://Levels/level_1.tscn
+res://Tiles/level_exit.gd
+res://Player/player.gd

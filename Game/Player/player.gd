@@ -7,10 +7,6 @@ var level = 0
 var can_punch = true
 var level_exit_pos = 1000000
 
-func _ready() -> void:
-	var screen_size = get_viewport_rect().size
-	$Camera2D.limit_bottom = screen_size.y
-
 #Summons a fist
 func punch():
 	var f = fist.instantiate()
@@ -65,13 +61,17 @@ func _physics_process(delta: float) -> void:
 			collider.queue_free()
 		#Checks for side collision with Enemies
 		elif collider.is_in_group("mobs") and is_on_wall():
-			queue_free()
+			if get_tree():
+				get_tree().reload_current_scene()
 
 
 func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
-	queue_free()
+	if get_tree():
+		get_tree().reload_current_scene()
 
 
 func _on_level_enter(LEPosition: Variant) -> void:
 	$Camera2D.limit_right = LEPosition.x
 	level_exit_pos = LEPosition.x
+	var screen_size = get_viewport_rect().size
+	$Camera2D.limit_bottom = screen_size.y

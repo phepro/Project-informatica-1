@@ -1,0 +1,13 @@
+res://Enemies/enemy.tscn::df630a05826c0be0dd90f0278d3e39f8::1747308279::res://.godot/exported/133200997/export-ea09a7a9bae2256955b1ef54748fdfa6-enemy.scn
+res://Levels/level_1.tscn::bd7165a10a3e84a80eeb53c853347f3a::1747918985::res://.godot/exported/133200997/export-fa9c54ec1f9d41bf90d27046a9bac1a2-level_1.scn
+res://Levels/level_2.tscn::ab8925687acf0244afaae5c2d112bff2::1747919103::res://.godot/exported/133200997/export-8009157c263a4ecd21ebf2223f1d9cc3-level_2.scn
+res://Player/fist.tscn::74bada94712bef5798f24322409757bf::1744896800::res://.godot/exported/133200997/export-e063908f6698ebc87eb5f5521be65beb-fist.scn
+res://Player/player.tscn::9fbce50862373e00e6bc3f32606dcb73::1747314608::res://.godot/exported/133200997/export-d267b47f7e81a3258979164d56d0d9c2-player.scn
+res://Tiles/bounce_pad.tscn::c426d2c1aedd6a98f72efa3825f26589::1746300421::res://.godot/exported/133200997/export-a4f46b471ee9e6ad8606f7f60e1548c0-bounce_pad.scn
+res://Tiles/ground.tscn::c4085c3aa5c3d5d1a898891f4d3c9cc8::1746179637::res://.godot/exported/133200997/export-03a41681d29c24b998e5ea5fded649d8-ground.scn
+res://Tiles/Level_Exit.tscn::39eac49ddb7605ee328514ba5de688e0::1747320475::res://.godot/exported/133200997/export-9f46920fd3344b2559b17eedb7088382-Level_Exit.scn
+res://Tiles/platform.tscn::71250a6b703081bf9a691c29f38f2fe8::1746299680::res://.godot/exported/133200997/export-19d51d4bece45c67ab245ec0d8b2da5c-platform.scn
+res://default_env.tres::afbed0c9e6032587f1165ae47e7b3166::1743690379::res://.godot/exported/133200997/export-7cf3fd67ad9f55210191d77b582b8209-default_env.res
+res://main.tscn::59e6517d50e20934ab14a966ea0218d0::1747919063::res://.godot/exported/133200997/export-3070c538c03ee49b7677ff960a3f5195-main.scn
+res://menu.tscn::a5066463783d32ebbe4399027a92fad8::1744896367::res://.godot/exported/133200997/export-a4951207776b25ee5c8b2b05c1463587-menu.scn
+res://MusicManager.tscn::a25a06a41ef7771cb3034fcc7bd58037::1747918091::res://.godot/exported/133200997/export-d390b2d774e24bfacd37c81759d25b9a-MusicManager.scn
