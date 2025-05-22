@@ -4,11 +4,11 @@ extends AudioStreamPlayer
 var playlists = {
 	"level1": [
 		preload("res://Project_139.wav") as AudioStream,
-		preload("res://04 Moondance.wav") as AudioStream
+		preload("res://Project_142.wav") as AudioStream
 	],
 	"level2": [
 		preload("res://Project_139.wav") as AudioStream,
-		preload("res://04 Moondance.wav") as AudioStream
+		preload("res://Project_142.wav") as AudioStream
 	],
 }
 var current_playlist: Array[AudioStream] = []
