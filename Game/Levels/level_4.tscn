@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://17vqa0rg1w7l"]
+
+[ext_resource type="Texture2D" uid="uid://yhygx3a1a5rr" path="res://Assets/5f17b3d3913d7.jpeg" id="1_ftfcu"]
+
+[node name="Level4" type="Node"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(320, 184)
+scale = Vector2(0.935294, 0.704902)
+texture = ExtResource("1_ftfcu")
