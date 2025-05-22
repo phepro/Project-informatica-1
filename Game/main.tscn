@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://b1dqlwn2m7l8i"]
+[gd_scene load_steps=3 format=3 uid="uid://b1dqlwn2m7l8i"]
 
 [ext_resource type="Script" uid="uid://d18ptku1aroqm" path="res://main.gd" id="1_h2yge"]
+[ext_resource type="AudioStream" uid="uid://c88yvrow5ak04" path="res://Project_140.wav" id="2_0xm2m"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_h2yge")
@@ -25,6 +26,11 @@ offset_top = 224.0
 offset_right = 544.0
 offset_bottom = 288.0
 text = "Windowed"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_0xm2m")
+volume_db = -10.0
+playback_type = 1
 
 [connection signal="button_down" from="Start_Button" to="." method="_on_start_button_button_down"]
 [connection signal="button_down" from="Fullscreen_Button" to="." method="_on_fullscreen_button_button_down"]
