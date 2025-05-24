@@ -556,4 +556,8 @@ texture = ExtResource("9_lk57d")
 position = Vector2(1680, 216)
 scale = Vector2(0.5, 0.5)
 
+[node name="AkListener2D" type="AkListener2D" parent="."]
+
+[node name="AkEvent2D" type="AkEvent2D" parent="."]
+
 [connection signal="LEpos" from="LevelExit" to="Player" method="_on_level_enter"]

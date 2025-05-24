@@ -1,6 +1,3 @@
-res://main.tscn
+res://Wwise/resources/wwise_ids.gd
+res://Levels/level_1.tscn
 res://Enemies/enemy.gd
-res://Levels/level_2.tscn
-res://Levels/level_3.tscn
-res://Levels/level_4.tscn
-res://MusicManager.tscn
