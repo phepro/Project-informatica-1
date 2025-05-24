@@ -29,7 +29,7 @@ text = "Windowed"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_0xm2m")
-volume_db = -10.0
+volume_db = -18.0
 playback_type = 1
 
 [connection signal="button_down" from="Start_Button" to="." method="_on_start_button_button_down"]
