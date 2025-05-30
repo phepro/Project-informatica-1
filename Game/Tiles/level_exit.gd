@@ -7,6 +7,10 @@ func _ready() -> void:
 	LEposition.x += size * scale.x
 	emit_signal("LEpos", LEposition)
 
+func _physics_process(delta: float) -> void:
+	if get_tree():
+		_ready()
+
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
@@ -16,5 +20,3 @@ func _on_body_entered(body: Node2D) -> void:
 		var next_level_path = "res://Levels/level_" + str(next_level_number) + ".tscn"
 		if get_tree():
 			get_tree().change_scene_to_file(next_level_path)
-		if get_tree():
-			get_tree().reload_current_scene()

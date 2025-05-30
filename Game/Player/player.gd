@@ -6,6 +6,11 @@ extends CharacterBody2D
 var level = 0
 var can_punch = true
 var level_exit_pos = 1000000
+var screen_size 
+
+func _ready() -> void:
+	screen_size = get_viewport_rect().size
+	$Camera2D.limit_bottom = screen_size.y
 
 #Summons a fist
 func punch():
@@ -73,5 +78,3 @@ func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
 func _on_level_enter(LEPosition: Variant) -> void:
 	$Camera2D.limit_right = LEPosition.x
 	level_exit_pos = LEPosition.x
-	var screen_size = get_viewport_rect().size
-	$Camera2D.limit_bottom = screen_size.y
