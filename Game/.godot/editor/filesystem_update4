@@ -1,4 +1,3 @@
-res://main.tscn
-res://Enemies/enemy.gd
+res://Wwise/resources/wwise_ids.gd
 res://Levels/level_1.tscn
-res://Levels/level_2.tscn
+res://Enemies/enemy.gd
