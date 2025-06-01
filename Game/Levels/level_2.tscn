@@ -469,7 +469,6 @@ pattern_4 = SubResource("TileMapPattern_2hkqn")
 
 [node name="Player" parent="." instance=ExtResource("2_arsda")]
 position = Vector2(24, 120)
-scale = Vector2(0.8, 0.8)
 floor_block_on_wall = false
 
 [node name="TileMaps" type="Node2D" parent="."]
@@ -550,4 +549,3 @@ scale = Vector2(0.5, 0.5)
 
 [node name="enemy" parent="." instance=ExtResource("11_qeqk5")]
 position = Vector2(704, 272)
-scale = Vector2(-0.7, 0.7)

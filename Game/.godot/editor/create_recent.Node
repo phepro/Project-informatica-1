@@ -1,3 +1,4 @@
+AnimatedSprite2D
 AkEvent2D
 AkListener2D
 Sprite2D
@@ -11,5 +12,3 @@ ParallaxLayer
 ParallaxBackground
 TileMap
 Button
-Camera2D
-Label

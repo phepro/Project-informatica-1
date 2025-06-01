@@ -1,6 +1,10 @@
 extends CharacterBody2D
 
-@export var SPEED = 100.0
+@export var SPEED = 50.0
+@onready var _animated_sprite = $AnimatedSprite2D
+
+func _ready() -> void:
+	_animated_sprite.play("walk")
 
 
 func _physics_process(delta: float) -> void:
@@ -8,7 +12,7 @@ func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 	
-	velocity.x = SPEED * scale.y
+	velocity.x = SPEED * -scale.y
 	
 	move_and_slide()
 	

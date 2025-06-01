@@ -1,21 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://dpn530tfo4jx3"]
+[gd_scene load_steps=3 format=3 uid="uid://dpn530tfo4jx3"]
 
 [ext_resource type="Script" uid="uid://nqk3ija43hf4" path="res://Player/fist.gd" id="1_cqe2n"]
-[ext_resource type="Texture2D" uid="uid://cqicihudtgbno" path="res://icon.png" id="2_nr678"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_qquw1"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_nr678")
-}],
-"loop": true,
-"name": &"punch",
-"speed": 5.0
-}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wqflr"]
-size = Vector2(64, 64)
+size = Vector2(60, 20)
 
 [node name="fist" type="Area2D"]
 rotation = 1.5708
@@ -23,13 +11,10 @@ scale = Vector2(0.8, 1.6)
 collision_layer = 32
 collision_mask = 16
 script = ExtResource("1_cqe2n")
-metadata/_edit_group_ = true
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_qquw1")
-animation = &"punch"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4.17239e-06, 8.52724e-06)
+scale = Vector2(0.999999, 0.999999)
 shape = SubResource("RectangleShape2D_wqflr")
 
 [connection signal="body_entered" from="." to="." method="body_entered"]

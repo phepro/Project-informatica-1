@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3 uid="uid://xnqtudctfoa5"]
+
+[ext_resource type="Script" uid="uid://dv6wkggivmsrx" path="res://Enemies/enemy.gd" id="1_nwg01"]
+[ext_resource type="Texture2D" uid="uid://tn5kstp3s4nm" path="res://Assets/Sprite-Sheet projectile enemy moving.png" id="2_vnsce"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bxkaj"]
+radius = 13.0
+height = 42.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rnyf2"]
+atlas = ExtResource("2_vnsce")
+region = Rect2(0, 0, 32, 43)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ehlef"]
+atlas = ExtResource("2_vnsce")
+region = Rect2(32, 0, 32, 43)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_paaka"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rnyf2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ehlef")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[node name="small_enemy" type="CharacterBody2D" groups=["mobs"]]
+collision_layer = 16
+collision_mask = 43
+floor_max_angle = 0.0
+floor_snap_length = 4.0
+platform_floor_layers = 4294967040
+script = ExtResource("1_nwg01")
+SPEED = 100.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -5)
+shape = SubResource("CapsuleShape2D_bxkaj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(4, -5)
+sprite_frames = SubResource("SpriteFrames_paaka")
+animation = &"walk"

@@ -3,6 +3,7 @@ extends CharacterBody2D
 @export var fist : PackedScene
 @export var SPEED = 200.0
 @export var JUMP_VELOCITY = -300.0
+@onready var _animated_sprite = $AnimatedSprite2D
 var level = 0
 var can_punch = true
 var level_exit_pos = 1000000
@@ -29,10 +30,13 @@ func _physics_process(delta: float) -> void:
 	#punch
 	if Input.is_action_pressed("punch"):
 		if can_punch:
+			_animated_sprite.play("punch")
+			_animated_sprite.frame = 1
 			can_punch = false
 			punch()
 			await get_tree().create_timer(1).timeout
 			can_punch = true
+			_animated_sprite.stop()
 	
 	# Handle jump.
 	if Input.is_action_just_pressed("move_up") and is_on_floor():
@@ -42,12 +46,14 @@ func _physics_process(delta: float) -> void:
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction := Input.get_axis("move_left", "move_right")
 	if direction:
+		_animated_sprite.play("walk")
 		if direction > 0:
 			scale.x = scale.y * 1
 		if direction < 0:
 			scale.x = scale.y * -1
 		velocity.x = direction * SPEED	
 	else:
+		_animated_sprite.stop()
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 	
 	move_and_slide()
@@ -61,7 +67,6 @@ func _physics_process(delta: float) -> void:
 		
 		#Checks for top collision with Enemies
 		if collider.is_in_group("mobs") and is_on_floor_only():
-			pass
 			velocity.y = JUMP_VELOCITY
 			collider.queue_free()
 		#Checks for side collision with Enemies

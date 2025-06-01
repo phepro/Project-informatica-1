@@ -1,23 +1,68 @@
-[gd_scene load_steps=6 format=3 uid="uid://b8inaxtragjkt"]
+[gd_scene load_steps=13 format=3 uid="uid://b8inaxtragjkt"]
 
 [ext_resource type="Script" uid="uid://cjsoq7m0o2bbp" path="res://Player/player.gd" id="1_onrkg"]
 [ext_resource type="PackedScene" uid="uid://dpn530tfo4jx3" path="res://Player/fist.tscn" id="2_i3pqv"]
-[ext_resource type="Texture2D" uid="uid://cq33aj2b5tvj8" path="res://Player/DababyCar.png" id="3_btcbx"]
+[ext_resource type="Texture2D" uid="uid://de5iysnydjelh" path="res://Assets/Sprite-Sheet Johnny punching.png" id="3_gwnis"]
+[ext_resource type="Texture2D" uid="uid://cmtcofdb7fl0e" path="res://Assets/Sprite-Sheet Johnny walking.png" id="4_k53q1"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_l8h54"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_gwnis"]
+atlas = ExtResource("3_gwnis")
+region = Rect2(0, 0, 16, 45)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k53q1"]
+atlas = ExtResource("3_gwnis")
+region = Rect2(16, 0, 16, 45)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fhl08"]
+atlas = ExtResource("4_k53q1")
+region = Rect2(0, 0, 16, 45)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vtle1"]
+atlas = ExtResource("4_k53q1")
+region = Rect2(16, 0, 16, 45)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_od3ui"]
+atlas = ExtResource("4_k53q1")
+region = Rect2(32, 0, 16, 45)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_00tjw"]
+atlas = ExtResource("4_k53q1")
+region = Rect2(48, 0, 16, 45)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x3vf3"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_btcbx")
+"texture": SubResource("AtlasTexture_gwnis")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k53q1")
 }],
 "loop": true,
-"name": &"default",
-"speed": 5.0
+"name": &"punch",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fhl08")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vtle1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_od3ui")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_00tjw")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 10.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_btcbx"]
-radius = 28.0
-height = 68.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gwnis"]
+radius = 5.00001
+height = 42.0
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 collision_mask = 27
@@ -29,16 +74,16 @@ script = ExtResource("1_onrkg")
 fist = ExtResource("2_i3pqv")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.5, 0.5)
-sprite_frames = SubResource("SpriteFrames_l8h54")
+position = Vector2(4, 0)
+sprite_frames = SubResource("SpriteFrames_x3vf3")
+animation = &"punch"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 4)
-rotation = 1.5708
-shape = SubResource("CapsuleShape2D_btcbx")
+position = Vector2(1, 0)
+shape = SubResource("CapsuleShape2D_gwnis")
 
 [node name="Punch_Spawn" type="Marker2D" parent="."]
-position = Vector2(70.4, 0)
+position = Vector2(15, -4)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 limit_left = 0
