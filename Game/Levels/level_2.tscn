@@ -468,7 +468,7 @@ pattern_4 = SubResource("TileMapPattern_2hkqn")
 [node name="Level2" type="Node"]
 
 [node name="Player" parent="." instance=ExtResource("2_arsda")]
-position = Vector2(24, 120)
+position = Vector2(9, 264)
 floor_block_on_wall = false
 
 [node name="TileMaps" type="Node2D" parent="."]

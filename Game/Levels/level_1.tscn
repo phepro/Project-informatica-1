@@ -561,5 +561,3 @@ scale = Vector2(0.5, 0.5)
 
 [node name="small_enemy" parent="." instance=ExtResource("13_lk57d")]
 position = Vector2(536, 168)
-
-[connection signal="LEpos" from="LevelExit" to="Player" method="_on_level_enter"]

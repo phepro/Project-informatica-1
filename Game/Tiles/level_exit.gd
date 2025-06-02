@@ -1,15 +1,10 @@
 extends Area2D
-signal LEpos(Position, size)
 
 func _ready() -> void:
 	var size = $CollisionShape2D.shape.size.x / 2
 	var LEposition = position
 	LEposition.x += size * scale.x
-	emit_signal("LEpos", LEposition)
-
-func _physics_process(delta: float) -> void:
-	if get_tree():
-		_ready()
+	get_tree().call_group("player", "_on_level_enter", LEposition)
 
 
 func _on_body_entered(body: Node2D) -> void:

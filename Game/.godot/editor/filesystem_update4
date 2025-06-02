@@ -1,9 +1,9 @@
 res://Player/player.tscn
 res://Enemies/enemy.gd
+res://Player/player.gd
+res://Enemies/enemy.tscn
+res://Enemies/small_enemy.tscn
+res://Tiles/level_exit.gd
+res://Tiles/Level_Exit.tscn
 res://Levels/level_1.tscn
 res://Levels/level_2.tscn
-res://Levels/level_3.tscn
-res://Enemies/enemy.tscn
-res://Player/fist.tscn
-res://Player/player.gd
-res://Enemies/small_enemy.tscn
