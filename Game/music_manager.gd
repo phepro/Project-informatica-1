@@ -4,7 +4,9 @@ extends AudioStreamPlayer
 var playlists = {
 	"levels_all": [
 		preload("res://Project_139.wav") as AudioStream,
-		preload("res://Project_142.wav") as AudioStream,
+		preload("res://Project_142.wav") as AudioStream
+	],
+		"levels_2": [
 		preload("res://Project_4.wav") as AudioStream
 	],
 }

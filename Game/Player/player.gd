@@ -4,6 +4,8 @@ extends CharacterBody2D
 @export var SPEED = 200.0
 @export var JUMP_VELOCITY = -300.0
 @onready var _animated_sprite = $AnimatedSprite2D
+@onready var punch_sfx = $AudioStreamPlayerPunch
+@onready var ouch_sfx = $AudioStreamPlayer2D
 var level = 0
 var can_punch = true
 var level_exit_pos = 1000000
@@ -19,6 +21,7 @@ func punch():
 	add_child(f)
 	f.transform = $Punch_Spawn.transform
 	f.scale = Vector2(1.2, 0.6)
+	punch_sfx.play()
 
 
 func _physics_process(delta: float) -> void:
@@ -72,11 +75,13 @@ func _physics_process(delta: float) -> void:
 		#Checks for side collision with Enemies
 		elif collider.is_in_group("mobs") and is_on_wall():
 			if get_tree():
+				ouch_sfx.play()
 				get_tree().reload_current_scene()
 
 
 func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
 	if get_tree():
+		ouch_sfx.play()
 		get_tree().reload_current_scene()
 
 
