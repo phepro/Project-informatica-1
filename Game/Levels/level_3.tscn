@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=4 uid="uid://b3i1t7ofg387u"]
+[gd_scene load_steps=21 format=4 uid="uid://b3i1t7ofg387u"]
 
 [ext_resource type="PackedScene" uid="uid://b8inaxtragjkt" path="res://Player/player.tscn" id="2_arsda"]
 [ext_resource type="Texture2D" uid="uid://dlunnjjj50fqp" path="res://Assets/Sidescroller Shooter - Central City/Assets/Tiles.png" id="2_rp5ft"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://r13fg4gwv1vh" path="res://Assets/Free Industrial Zone Tileset/2 Background/4.png" id="6_rp5ft"]
 [ext_resource type="Texture2D" uid="uid://bywifcqp3eqqm" path="res://Assets/Free Industrial Zone Tileset/2 Background/5.png" id="7_qeqk5"]
 [ext_resource type="PackedScene" uid="uid://bl1dlaojjs5ai" path="res://Tiles/Level_Exit.tscn" id="10_rp5ft"]
+[ext_resource type="PackedScene" uid="uid://xnqtudctfoa5" path="res://Enemies/small_enemy.tscn" id="11_4t7ew"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_f4pg2"]
 tile_data = PackedInt32Array(65536, 458754, 6, 131072, 1507330, 1, 196608, 1507330, 1, 262144, 1507330, 1, 327680, 1507330, 1, 393216, 1507330, 1, 1, 458754, 6, 131073, 1376258, 1, 196609, 1376258, 0, 262145, 1376258, 1, 327681, 1376258, 0, 393217, 1376258, 2, 65538, 393218, 6, 131074, 1441794, 1, 196610, 1441794, 0, 262146, 1441794, 1, 327682, 1441794, 0, 393218, 1441794, 2, 65539, 393218, 4, 131075, 1441794, 1, 196611, 1507330, 0, 262147, 1441794, 1, 327683, 1507330, 0, 393219, 1507330, 2, 4, 393218, 6, 65540, 458754, 6, 131076, 1507330, 1, 196612, 1507330, 1, 262148, 1507330, 1, 327684, 1507330, 1, 393220, 1507330, 1, 5, 458754, 6, 131077, 1376258, 1, 196613, 1376258, 0, 262149, 1376258, 1, 327685, 1376258, 0, 393221, 1376258, 2, 65542, 393218, 6, 131078, 1441794, 1, 196614, 1441794, 0, 262150, 1441794, 1, 327686, 1441794, 0, 393222, 1441794, 2, 65543, 393218, 4, 131079, 1441794, 1, 196615, 1441794, 0, 262151, 1441794, 1, 327687, 1441794, 0, 393223, 1441794, 2, 8, 393218, 6, 65544, 458754, 6, 131080, 1441794, 1, 196616, 1441794, 0, 262152, 1441794, 1, 327688, 1441794, 0, 393224, 1441794, 2, 9, 458754, 6, 131081, 1441794, 1, 196617, 1441794, 0, 262153, 1441794, 1, 327689, 1441794, 0, 393225, 1441794, 2, 65546, 458754, 6, 131082, 1441794, 1, 196618, 1441794, 0, 262154, 1441794, 1, 327690, 1441794, 0, 393226, 1441794, 2, 11, 393218, 6, 131083, 1376258, 1, 196619, 1376258, 0, 262155, 1376258, 1, 327691, 1376258, 0, 393227, 1441794, 2, 12, 393218, 6, 65548, 458754, 6, 131084, 1441794, 1, 196620, 1441794, 0, 262156, 1441794, 1, 327692, 1441794, 0, 393228, 1441794, 2, 13, 458754, 6, 131085, 1441794, 1, 196621, 1441794, 0, 262157, 1441794, 1, 327693, 1441794, 0, 393229, 1441794, 2, 65550, 458754, 6, 131086, 1441794, 1, 196622, 1441794, 0, 262158, 1441794, 1, 327694, 1441794, 0, 393230, 1507330, 2, 131087, 1507330, 1, 196623, 1507330, 1, 262159, 1507330, 1, 327695, 1507330, 1, 393231, 1507330, 1)
@@ -545,3 +546,15 @@ texture = ExtResource("7_qeqk5")
 [node name="LevelExit" parent="." instance=ExtResource("10_rp5ft")]
 position = Vector2(1680, 216)
 scale = Vector2(0.5, 0.5)
+
+[node name="small_enemy" parent="." instance=ExtResource("11_4t7ew")]
+position = Vector2(384, 310)
+
+[node name="small_enemy2" parent="." instance=ExtResource("11_4t7ew")]
+position = Vector2(488, 312)
+
+[node name="small_enemy3" parent="." instance=ExtResource("11_4t7ew")]
+position = Vector2(592, 312)
+
+[node name="small_enemy4" parent="." instance=ExtResource("11_4t7ew")]
+position = Vector2(776, 312)
