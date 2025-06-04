@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://xnqtudctfoa5"]
+[gd_scene load_steps=8 format=3 uid="uid://xnqtudctfoa5"]
 
-[ext_resource type="Script" uid="uid://dv6wkggivmsrx" path="res://Enemies/enemy.gd" id="1_nwg01"]
+[ext_resource type="Script" uid="uid://cclnfcs2hmtck" path="res://Enemies/small_enemy.gd" id="1_vnsce"]
+[ext_resource type="PackedScene" uid="uid://b8amj0xn5bwhb" path="res://bullet.tscn" id="2_rnyf2"]
 [ext_resource type="Texture2D" uid="uid://tn5kstp3s4nm" path="res://Assets/Sprite-Sheet projectile enemy moving.png" id="2_vnsce"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bxkaj"]
@@ -35,8 +36,8 @@ collision_mask = 43
 floor_max_angle = 0.0
 floor_snap_length = 4.0
 platform_floor_layers = 4294967040
-script = ExtResource("1_nwg01")
-SPEED = 100.0
+script = ExtResource("1_vnsce")
+bullet = ExtResource("2_rnyf2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -5)
@@ -46,3 +47,9 @@ shape = SubResource("CapsuleShape2D_bxkaj")
 position = Vector2(4, -5)
 sprite_frames = SubResource("SpriteFrames_paaka")
 animation = &"walk"
+
+[node name="AttackCooldown" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
+[connection signal="timeout" from="AttackCooldown" to="." method="_on_attack_cooldown_timeout"]

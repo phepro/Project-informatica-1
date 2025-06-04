@@ -18,7 +18,7 @@ func punch():
 	var f = fist.instantiate()
 	add_child(f)
 	f.transform = $Punch_Spawn.transform
-	f.scale = Vector2(1.2, 0.6)
+	#f.scale = Vector2(1.2, 0.6)
 
 
 func _physics_process(delta: float) -> void:

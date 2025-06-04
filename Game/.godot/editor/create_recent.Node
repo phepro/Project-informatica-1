@@ -1,4 +1,7 @@
+Timer
 AnimatedSprite2D
+CollisionShape2D
+Area2D
 AkEvent2D
 AkListener2D
 Sprite2D
@@ -10,5 +13,3 @@ TileMapLayer
 Node2D
 ParallaxLayer
 ParallaxBackground
-TileMap
-Button
