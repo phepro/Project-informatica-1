@@ -1,9 +1,7 @@
-res://Player/player.tscn
-res://Enemies/enemy.gd
-res://Player/player.gd
 res://Enemies/enemy.tscn
-res://Enemies/small_enemy.tscn
-res://Tiles/level_exit.gd
-res://Tiles/Level_Exit.tscn
-res://Levels/level_1.tscn
+res://Enemies/enemy.gd
 res://Levels/level_2.tscn
+res://MusicManager.tscn
+res://music_manager.gd
+res://Levels/level_1.gd
+res://Levels/level_1.tscn
