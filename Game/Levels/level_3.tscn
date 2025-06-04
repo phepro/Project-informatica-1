@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=4 uid="uid://b3i1t7ofg387u"]
+[gd_scene load_steps=23 format=4 uid="uid://b3i1t7ofg387u"]
 
 [ext_resource type="PackedScene" uid="uid://b8inaxtragjkt" path="res://Player/player.tscn" id="2_arsda"]
 [ext_resource type="Texture2D" uid="uid://dlunnjjj50fqp" path="res://Assets/Sidescroller Shooter - Central City/Assets/Tiles.png" id="2_rp5ft"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://bywifcqp3eqqm" path="res://Assets/Free Industrial Zone Tileset/2 Background/5.png" id="7_qeqk5"]
 [ext_resource type="PackedScene" uid="uid://bl1dlaojjs5ai" path="res://Tiles/Level_Exit.tscn" id="10_rp5ft"]
 [ext_resource type="PackedScene" uid="uid://xnqtudctfoa5" path="res://Enemies/small_enemy.tscn" id="11_4t7ew"]
+[ext_resource type="PackedScene" uid="uid://ckkfhesoagit6" path="res://controloverlay.tscn" id="12_7cdb2"]
 [ext_resource type="PackedScene" uid="uid://cxivamm3og2c7" path="res://pause_menu.tscn" id="12_oojpf"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_f4pg2"]
@@ -561,6 +562,8 @@ position = Vector2(592, 312)
 position = Vector2(776, 312)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" parent="CanvasLayer" instance=ExtResource("12_7cdb2")]
 
 [node name="PausedMenu" parent="CanvasLayer" instance=ExtResource("12_oojpf")]
 metadata/_edit_use_anchors_ = true

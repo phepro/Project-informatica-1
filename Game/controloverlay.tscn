@@ -1,0 +1,50 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckkfhesoagit6"]
+
+[sub_resource type="Theme" id="Theme_bifnq"]
+default_font_size = 10
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_bifnq")
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+layout_mode = 2
+offset_left = 576.0
+offset_right = 640.0
+offset_bottom = 128.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.12549, 0.25098, 1, 1)
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_left = 576.0
+offset_right = 640.0
+offset_bottom = 128.0
+
+[node name="Label2" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "A = left"
+
+[node name="Label3" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "D = right"
+
+[node name="Label4" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "esc = 
+pause menu"
+
+[node name="Label5" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "LMouse = 
+punch"
+
+[node name="Label" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "W = jump"

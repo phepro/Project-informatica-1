@@ -1,9 +1,16 @@
 extends AudioStreamPlayer
 # alle code rond de music manager is geschreven door chatgpt
 @onready var player = $AudioStreamPlayer
+
 var playlists = {
 		"levels_all": [
 		preload("res://Project_4.wav") as AudioStream
+	],
+		"main_menu": [
+		preload("res://main menu.wav") as AudioStream
+	],
+		"settings": [
+		preload("res://settings.wav") as AudioStream
 	],
 }
 var current_playlist: Array[AudioStream] = []
