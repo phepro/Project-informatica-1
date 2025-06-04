@@ -1,5 +1,8 @@
 extends Control
 
+@onready var menu_click = $menu_click
+@onready var menu_hover = $menu_hover
+
 #var _is_paused:bool = false:
 	#set = set_paused 
 	
@@ -23,11 +26,15 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func _on_resume_pressed() -> void:
 	_is_paused = false
+	menu_click.play()
 
 
 func _on_settings_pressed() -> void:
-	pass # Replace with function body.
+	menu_click.play()
+	_is_paused = false
+	get_tree().change_scene_to_file("res://main.tscn")
 
 
 func _on_quit_pressed() -> void:
+	menu_click.play()
 	get_tree().quit()

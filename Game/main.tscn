@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://b1dqlwn2m7l8i"]
+[gd_scene load_steps=5 format=3 uid="uid://b1dqlwn2m7l8i"]
 
 [ext_resource type="Script" uid="uid://d18ptku1aroqm" path="res://main.gd" id="1_h2yge"]
 [ext_resource type="AudioStream" uid="uid://c88yvrow5ak04" path="res://Project_140.wav" id="2_0xm2m"]
+[ext_resource type="AudioStream" uid="uid://bphdndih1guy0" path="res://Menuclick.wav" id="3_1bvp3"]
+[ext_resource type="AudioStream" uid="uid://o3kdskrrphvb" path="res://menuhover.wav" id="4_lquwl"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_h2yge")
@@ -13,25 +15,31 @@ offset_right = 328.0
 offset_bottom = 232.0
 text = "Go to LEVEL 1"
 
-[node name="Fullscreen_Button" type="Button" parent="."]
+[node name="Settings" type="Button" parent="."]
 offset_left = 400.0
 offset_top = 56.0
 offset_right = 544.0
 offset_bottom = 120.0
-text = "Fullscreen"
+text = "Settings"
 
-[node name="Windowed_Button" type="Button" parent="."]
+[node name="Quit" type="Button" parent="."]
 offset_left = 400.0
 offset_top = 224.0
 offset_right = 544.0
 offset_bottom = 288.0
-text = "Windowed"
+text = "Quit"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_0xm2m")
 volume_db = -18.0
 playback_type = 1
 
+[node name="menu_click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_1bvp3")
+
+[node name="menu_hover" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_lquwl")
+
 [connection signal="button_down" from="Start_Button" to="." method="_on_start_button_button_down"]
-[connection signal="button_down" from="Fullscreen_Button" to="." method="_on_fullscreen_button_button_down"]
-[connection signal="button_down" from="Windowed_Button" to="." method="_on_windowed_button_button_down"]
+[connection signal="pressed" from="Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
