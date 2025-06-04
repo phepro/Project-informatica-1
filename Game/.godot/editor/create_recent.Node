@@ -1,4 +1,5 @@
 Timer
+AudioStreamPlayer2D
 AnimatedSprite2D
 CollisionShape2D
 Area2D
@@ -13,3 +14,5 @@ TileMapLayer
 Node2D
 ParallaxLayer
 ParallaxBackground
+TileMap
+

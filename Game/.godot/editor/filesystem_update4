@@ -9,3 +9,4 @@ res://bullet.tscn
 res://Player/player.gd
 res://Levels/level_1.tscn
 res://Levels/level_3.tscn
+res://MusicManager.tscn

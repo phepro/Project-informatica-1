@@ -1,4 +1,4 @@
 extends Node
 
 func _ready() -> void:
-	MusicManager.play_playlist("level1")
+	MusicManager.play_playlist("levels_all")

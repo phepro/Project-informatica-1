@@ -2,13 +2,8 @@ extends AudioStreamPlayer
 # alle code rond de music manager is geschreven door chatgpt
 @onready var player = $AudioStreamPlayer
 var playlists = {
-	"level1": [
-		preload("res://Project_139.wav") as AudioStream,
-		preload("res://Project_142.wav") as AudioStream
-	],
-	"level2": [
-		preload("res://Project_139.wav") as AudioStream,
-		preload("res://Project_142.wav") as AudioStream
+		"levels_all": [
+		preload("res://Project_4.wav") as AudioStream
 	],
 }
 var current_playlist: Array[AudioStream] = []
@@ -31,7 +26,7 @@ func _ready():
 func play_next():
 	if current_playlist.is_empty():
 		return
-
+ 
 	var stream = current_playlist[current_index]
 
 	# Disable loop safely depending on type

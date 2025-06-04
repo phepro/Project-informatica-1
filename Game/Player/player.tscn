@@ -1,9 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://b8inaxtragjkt"]
+[gd_scene load_steps=15 format=3 uid="uid://b8inaxtragjkt"]
 
 [ext_resource type="Script" uid="uid://cjsoq7m0o2bbp" path="res://Player/player.gd" id="1_onrkg"]
 [ext_resource type="PackedScene" uid="uid://dpn530tfo4jx3" path="res://Player/fist.tscn" id="2_i3pqv"]
 [ext_resource type="Texture2D" uid="uid://de5iysnydjelh" path="res://Assets/Sprite-Sheet Johnny punching.png" id="3_gwnis"]
 [ext_resource type="Texture2D" uid="uid://cmtcofdb7fl0e" path="res://Assets/Sprite-Sheet Johnny walking.png" id="4_k53q1"]
+[ext_resource type="AudioStream" uid="uid://c170xspsp5i2c" path="res://punch.wav" id="5_k53q1"]
+[ext_resource type="AudioStream" uid="uid://dhk6efa4l5egc" path="res://ouch.wav" id="6_fhl08"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gwnis"]
 atlas = ExtResource("3_gwnis")
@@ -91,5 +93,11 @@ limit_top = 0
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="Camera2D"]
 rect = Rect2(-320, -190, 640, 380)
+
+[node name="AudioStreamPlayerPunch" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_k53q1")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_fhl08")
 
 [connection signal="screen_exited" from="Camera2D/VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
