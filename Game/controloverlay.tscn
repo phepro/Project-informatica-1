@@ -42,7 +42,7 @@ pause menu"
 
 [node name="Label5" type="Label" parent="GridContainer"]
 layout_mode = 2
-text = "LMouse = 
+text = "Space Bar = 
 punch"
 
 [node name="Label" type="Label" parent="GridContainer"]
