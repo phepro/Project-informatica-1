@@ -1,18 +1,18 @@
 [gd_scene load_steps=23 format=4 uid="uid://og0dgcfccao8"]
 
-[ext_resource type="PackedScene" uid="uid://b8inaxtragjkt" path="res://Player/player.tscn" id="2_arsda"]
-[ext_resource type="Texture2D" uid="uid://dlunnjjj50fqp" path="res://Assets/Sidescroller Shooter - Central City/Assets/Tiles.png" id="2_rp5ft"]
-[ext_resource type="Texture2D" uid="uid://0e4bw1220hya" path="res://Assets/Sidescroller Shooter - Central City/Assets/Props-01.png" id="3_qeqk5"]
-[ext_resource type="Texture2D" uid="uid://b5bdyth5hm5kx" path="res://Assets/Free Industrial Zone Tileset/2 Background/1.png" id="3_s275v"]
-[ext_resource type="Texture2D" uid="uid://dk31wiunxg76r" path="res://Assets/Sidescroller Shooter - Central City/Assets/Buildings.png" id="4_1soli"]
-[ext_resource type="Texture2D" uid="uid://bt8kicu7lsiwo" path="res://Assets/Free Industrial Zone Tileset/2 Background/2.png" id="4_pml6m"]
-[ext_resource type="Texture2D" uid="uid://04aaimlrajup" path="res://Assets/Free Industrial Zone Tileset/2 Background/3.png" id="5_vltsr"]
-[ext_resource type="Texture2D" uid="uid://r13fg4gwv1vh" path="res://Assets/Free Industrial Zone Tileset/2 Background/4.png" id="6_rp5ft"]
-[ext_resource type="Texture2D" uid="uid://bywifcqp3eqqm" path="res://Assets/Free Industrial Zone Tileset/2 Background/5.png" id="7_qeqk5"]
-[ext_resource type="PackedScene" uid="uid://bl1dlaojjs5ai" path="res://Tiles/Level_Exit.tscn" id="10_rp5ft"]
-[ext_resource type="PackedScene" uid="uid://1hb6t4avhmy" path="res://Enemies/enemy.tscn" id="11_qeqk5"]
-[ext_resource type="PackedScene" uid="uid://cxivamm3og2c7" path="res://pause_menu.tscn" id="12_1soli"]
-[ext_resource type="PackedScene" uid="uid://ckkfhesoagit6" path="res://controloverlay.tscn" id="12_4pbjs"]
+[ext_resource type="PackedScene" uid="uid://b8inaxtragjkt" path="res://Player/player.tscn" id="1_xbcdb"]
+[ext_resource type="Texture2D" uid="uid://dlunnjjj50fqp" path="res://Assets/Sidescroller Shooter - Central City/Assets/Tiles.png" id="2_s77qv"]
+[ext_resource type="Texture2D" uid="uid://0e4bw1220hya" path="res://Assets/Sidescroller Shooter - Central City/Assets/Props-01.png" id="3_5hnhx"]
+[ext_resource type="Texture2D" uid="uid://dk31wiunxg76r" path="res://Assets/Sidescroller Shooter - Central City/Assets/Buildings.png" id="4_78pok"]
+[ext_resource type="Texture2D" uid="uid://b5bdyth5hm5kx" path="res://Assets/Free Industrial Zone Tileset/2 Background/1.png" id="5_lvfll"]
+[ext_resource type="Texture2D" uid="uid://bt8kicu7lsiwo" path="res://Assets/Free Industrial Zone Tileset/2 Background/2.png" id="6_jcnlr"]
+[ext_resource type="Texture2D" uid="uid://04aaimlrajup" path="res://Assets/Free Industrial Zone Tileset/2 Background/3.png" id="7_5kfcu"]
+[ext_resource type="Texture2D" uid="uid://r13fg4gwv1vh" path="res://Assets/Free Industrial Zone Tileset/2 Background/4.png" id="8_i558w"]
+[ext_resource type="Texture2D" uid="uid://bywifcqp3eqqm" path="res://Assets/Free Industrial Zone Tileset/2 Background/5.png" id="9_cuxq2"]
+[ext_resource type="PackedScene" uid="uid://bl1dlaojjs5ai" path="res://Tiles/Level_Exit.tscn" id="10_wvr33"]
+[ext_resource type="PackedScene" uid="uid://1hb6t4avhmy" path="res://Enemies/enemy.tscn" id="11_sgm4o"]
+[ext_resource type="PackedScene" uid="uid://ckkfhesoagit6" path="res://controloverlay.tscn" id="12_6r3eb"]
+[ext_resource type="PackedScene" uid="uid://cxivamm3og2c7" path="res://pause_menu.tscn" id="13_2pufk"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_f4pg2"]
 tile_data = PackedInt32Array(65536, 458754, 6, 131072, 1507330, 1, 196608, 1507330, 1, 262144, 1507330, 1, 327680, 1507330, 1, 393216, 1507330, 1, 1, 458754, 6, 131073, 1376258, 1, 196609, 1376258, 0, 262145, 1376258, 1, 327681, 1376258, 0, 393217, 1376258, 2, 65538, 393218, 6, 131074, 1441794, 1, 196610, 1441794, 0, 262146, 1441794, 1, 327682, 1441794, 0, 393218, 1441794, 2, 65539, 393218, 4, 131075, 1441794, 1, 196611, 1507330, 0, 262147, 1441794, 1, 327683, 1507330, 0, 393219, 1507330, 2, 4, 393218, 6, 65540, 458754, 6, 131076, 1507330, 1, 196612, 1507330, 1, 262148, 1507330, 1, 327684, 1507330, 1, 393220, 1507330, 1, 5, 458754, 6, 131077, 1376258, 1, 196613, 1376258, 0, 262149, 1376258, 1, 327685, 1376258, 0, 393221, 1376258, 2, 65542, 393218, 6, 131078, 1441794, 1, 196614, 1441794, 0, 262150, 1441794, 1, 327686, 1441794, 0, 393222, 1441794, 2, 65543, 393218, 4, 131079, 1441794, 1, 196615, 1441794, 0, 262151, 1441794, 1, 327687, 1441794, 0, 393223, 1441794, 2, 8, 393218, 6, 65544, 458754, 6, 131080, 1441794, 1, 196616, 1441794, 0, 262152, 1441794, 1, 327688, 1441794, 0, 393224, 1441794, 2, 9, 458754, 6, 131081, 1441794, 1, 196617, 1441794, 0, 262153, 1441794, 1, 327689, 1441794, 0, 393225, 1441794, 2, 65546, 458754, 6, 131082, 1441794, 1, 196618, 1441794, 0, 262154, 1441794, 1, 327690, 1441794, 0, 393226, 1441794, 2, 11, 393218, 6, 131083, 1376258, 1, 196619, 1376258, 0, 262155, 1376258, 1, 327691, 1376258, 0, 393227, 1441794, 2, 12, 393218, 6, 65548, 458754, 6, 131084, 1441794, 1, 196620, 1441794, 0, 262156, 1441794, 1, 327692, 1441794, 0, 393228, 1441794, 2, 13, 458754, 6, 131085, 1441794, 1, 196621, 1441794, 0, 262157, 1441794, 1, 327693, 1441794, 0, 393229, 1441794, 2, 65550, 458754, 6, 131086, 1441794, 1, 196622, 1441794, 0, 262158, 1441794, 1, 327694, 1441794, 0, 393230, 1507330, 2, 131087, 1507330, 1, 196623, 1507330, 1, 262159, 1507330, 1, 327695, 1507330, 1, 393231, 1507330, 1)
@@ -30,7 +30,7 @@ tile_data = PackedInt32Array(0, 327682, 1, 65536, 327682, 2, 131072, 327682, 3, 
 tile_data = PackedInt32Array(0, 524290, 7, 65536, 524290, 8, 131072, 524290, 9, 196608, 524290, 10, 262144, 524290, 9, 327680, 524290, 10, 393216, 524290, 9, 458752, 524290, 10, 1, 589826, 7, 65537, 589826, 8, 131073, 589826, 9, 196609, 589826, 10, 262145, 589826, 9, 327681, 589826, 10, 393217, 589826, 9, 458753, 589826, 10, 524289, 589826, 9, 2, 720898, 7, 65538, 589826, 8, 131074, 720898, 9, 196610, 720898, 10, 262146, 720898, 9, 327682, 720898, 10, 393218, 720898, 9, 458754, 720898, 10, 524290, 720898, 9, 589826, 720898, 10, 3, 786434, 7, 65539, 786434, 8, 131075, 786434, 9, 196611, 786434, 10, 262147, 786434, 9, 327683, 786434, 10, 393219, 786434, 9, 458755, 786434, 10, 524291, 786434, 9, 589827, 786434, 10)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4pbjs"]
-texture = ExtResource("2_rp5ft")
+texture = ExtResource("2_s77qv")
 4:0/0 = 0
 4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:0/0 = 0
@@ -122,7 +122,7 @@ texture = ExtResource("2_rp5ft")
 1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lmqi1"]
-texture = ExtResource("3_qeqk5")
+texture = ExtResource("3_5hnhx")
 5:0/0 = 0
 5:1/0 = 0
 6:1/0 = 0
@@ -193,7 +193,7 @@ texture = ExtResource("3_qeqk5")
 3:4/0/texture_origin = Vector2i(-24, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5yfph"]
-texture = ExtResource("4_1soli")
+texture = ExtResource("4_78pok")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -469,7 +469,7 @@ pattern_4 = SubResource("TileMapPattern_2hkqn")
 
 [node name="Level2" type="Node"]
 
-[node name="Player" parent="." instance=ExtResource("2_arsda")]
+[node name="Player" parent="." instance=ExtResource("1_xbcdb")]
 position = Vector2(9, 264)
 floor_block_on_wall = false
 
@@ -510,11 +510,11 @@ motion_mirroring = Vector2(640, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2(320, 180)
-texture = ExtResource("3_s275v")
+texture = ExtResource("5_lvfll")
 
 [node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2(320, 180)
-texture = ExtResource("4_pml6m")
+texture = ExtResource("6_jcnlr")
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
 modulate = Color(1, 0.784314, 1, 1)
@@ -524,7 +524,7 @@ motion_mirroring = Vector2(1024, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
 position = Vector2(320, 170)
-texture = ExtResource("5_vltsr")
+texture = ExtResource("7_5kfcu")
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
 modulate = Color(1, 0.784314, 1, 1)
@@ -534,7 +534,7 @@ motion_mirroring = Vector2(768, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
 position = Vector2(320, 170)
-texture = ExtResource("6_rp5ft")
+texture = ExtResource("8_i558w")
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
 modulate = Color(1, 0.784314, 1, 1)
@@ -543,18 +543,18 @@ motion_mirroring = Vector2(640, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
 position = Vector2(320, 170)
-texture = ExtResource("7_qeqk5")
+texture = ExtResource("9_cuxq2")
 
-[node name="LevelExit" parent="." instance=ExtResource("10_rp5ft")]
+[node name="LevelExit" parent="." instance=ExtResource("10_wvr33")]
 position = Vector2(2192, 232)
 scale = Vector2(0.5, 0.5)
 
-[node name="enemy" parent="." instance=ExtResource("11_qeqk5")]
+[node name="enemy" parent="." instance=ExtResource("11_sgm4o")]
 position = Vector2(704, 272)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Control" parent="CanvasLayer" instance=ExtResource("12_4pbjs")]
+[node name="Control" parent="CanvasLayer" instance=ExtResource("12_6r3eb")]
 
-[node name="PausedMenu" parent="CanvasLayer" instance=ExtResource("12_1soli")]
+[node name="PausedMenu" parent="CanvasLayer" instance=ExtResource("13_2pufk")]
 metadata/_edit_use_anchors_ = true

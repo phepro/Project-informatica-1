@@ -1,8 +1,7 @@
 res://Enemies/enemy.tscn
 res://Enemies/enemy.gd
-res://Levels/level_2.tscn
 res://MusicManager.tscn
-res://Levels/level_1.tscn
 res://k_0_onjbhuybiov.tscn
 res://main.tscn
 res://controloverlay.tscn
+res://menu.tscn
