@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 res://Enemies/enemy.tscn::46228c28474f427876bc48bf10e7545f::1749100795::res://.godot/exported/133200997/export-ea09a7a9bae2256955b1ef54748fdfa6-enemy.scn
 res://Player/fist.tscn::3862711814e170c7813e5968b57123e8::1749041839::res://.godot/exported/133200997/export-e063908f6698ebc87eb5f5521be65beb-fist.scn
 res://Player/player.tscn::e513be2986d6eb3d65c6e4d78cd5e834::1749041839::res://.godot/exported/133200997/export-d267b47f7e81a3258979164d56d0d9c2-player.scn
@@ -21,3 +22,23 @@ res://level_1.tscn::14d548f5798a39521fafeb0c20741965::1749100795::res://.godot/e
 res://level_2.tscn::4f13c386b86d4f3948700c0e30ee54f3::1749100795::res://.godot/exported/133200997/export-f232880c53f78a005d817f1d8d602f60-level_2.scn
 res://level_3.tscn::a0926aa8ccaec99166e71081def21c31::1749063771::res://.godot/exported/133200997/export-78ee6155194928ba67dfe0fde84cf4d7-level_3.scn
 res://level_4.tscn::074bc3a873a2d86816fa004be9c78ea9::1749063771::res://.godot/exported/133200997/export-a5c17425eca0b61b001d3a17f3cba1b8-level_4.scn
+=======
+res://Enemies/enemy.tscn::46228c28474f427876bc48bf10e7545f::1749039089::res://.godot/exported/133200997/export-ea09a7a9bae2256955b1ef54748fdfa6-enemy.scn
+res://Levels/level_1.tscn::45f044cd69a9ebb7ca455344851a0e6f::1749046836::res://.godot/exported/133200997/export-fa9c54ec1f9d41bf90d27046a9bac1a2-level_1.scn
+res://Levels/level_2.tscn::217596ad9748bf5567bbff4fff6e205c::1749046975::res://.godot/exported/133200997/export-8009157c263a4ecd21ebf2223f1d9cc3-level_2.scn
+res://Player/fist.tscn::3862711814e170c7813e5968b57123e8::1749046531::res://.godot/exported/133200997/export-e063908f6698ebc87eb5f5521be65beb-fist.scn
+res://Player/player.tscn::3bef3e53e56d07a2a39f80c0cee1d8f7::1749046975::res://.godot/exported/133200997/export-d267b47f7e81a3258979164d56d0d9c2-player.scn
+res://Tiles/bounce_pad.tscn::c426d2c1aedd6a98f72efa3825f26589::1746300421::res://.godot/exported/133200997/export-a4f46b471ee9e6ad8606f7f60e1548c0-bounce_pad.scn
+res://Tiles/ground.tscn::c4085c3aa5c3d5d1a898891f4d3c9cc8::1746179637::res://.godot/exported/133200997/export-03a41681d29c24b998e5ea5fded649d8-ground.scn
+res://Tiles/Level_Exit.tscn::39eac49ddb7605ee328514ba5de688e0::1748852121::res://.godot/exported/133200997/export-9f46920fd3344b2559b17eedb7088382-Level_Exit.scn
+res://Tiles/platform.tscn::71250a6b703081bf9a691c29f38f2fe8::1746299680::res://.godot/exported/133200997/export-19d51d4bece45c67ab245ec0d8b2da5c-platform.scn
+res://default_env.tres::afbed0c9e6032587f1165ae47e7b3166::1743690379::res://.godot/exported/133200997/export-7cf3fd67ad9f55210191d77b582b8209-default_env.res
+res://main.tscn::5355e70050e79f18253394c1f3e32833::1748604701::res://.godot/exported/133200997/export-3070c538c03ee49b7677ff960a3f5195-main.scn
+res://menu.tscn::a5066463783d32ebbe4399027a92fad8::1744896367::res://.godot/exported/133200997/export-a4951207776b25ee5c8b2b05c1463587-menu.scn
+res://MusicManager.tscn::aca573415dbb912213af65a2d738f58a::1748604695::res://.godot/exported/133200997/export-d390b2d774e24bfacd37c81759d25b9a-MusicManager.scn
+res://Enemies/small_enemy.tscn::508aeef7b8dd0747979e331c8f9611cd::1749046550::res://.godot/exported/133200997/export-26b4a5e67dc347c3937b7514a110f4c5-small_enemy.scn
+res://Levels/level_3.tscn::56ab3dcf1d2f31c9af491d91397d4f4f::1749046896::res://.godot/exported/133200997/export-efa36142898fe8a41a84f59456e1b280-level_3.scn
+res://Levels/level_4.tscn::8fdc49787f9b7977f85cdedc95be77d6::1747920488::res://.godot/exported/133200997/export-4e3b299600bd6c715040ff702b0cd8dc-level_4.scn
+res://Wwise/resources/WwiseProjectData.tres::8da17f002dfb3d4e2dfb911c27326a9c::1748604695::res://.godot/exported/133200997/export-8ee1c06c83c92d97edf269ea9943c815-WwiseProjectData.res
+res://bullet.tscn::11d5d8cd7399cd6282a161e28350daba::1749046531::res://.godot/exported/133200997/export-6350fccf6e14d2f0c891730ee1d2c6cd-bullet.scn
+>>>>>>> Stashed changes
