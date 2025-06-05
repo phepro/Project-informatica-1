@@ -1,6 +1,6 @@
 [gd_scene load_steps=25 format=4 uid="uid://bqvs4i0rcv6wy"]
 
-[ext_resource type="Script" uid="uid://cp8ht6wbdfbmm" path="res://Levels/level_1.gd" id="1_rs4xw"]
+[ext_resource type="Script" uid="uid://cp8ht6wbdfbmm" path="res://level_1.gd" id="1_rs4xw"]
 [ext_resource type="PackedScene" uid="uid://b8inaxtragjkt" path="res://Player/player.tscn" id="1_syshm"]
 [ext_resource type="PackedScene" uid="uid://1hb6t4avhmy" path="res://Enemies/enemy.tscn" id="2_f4pg2"]
 [ext_resource type="Texture2D" uid="uid://dlunnjjj50fqp" path="res://Assets/Sidescroller Shooter - Central City/Assets/Tiles.png" id="2_rfktq"]
